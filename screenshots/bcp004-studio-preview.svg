@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060b14"/>
+      <stop offset="100%" stop-color="#0c1424"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121e36"/>
+      <stop offset="100%" stop-color="#09101e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Studio Frame -->
+  <rect x="30" y="30" width="1140" height="640" rx="12" fill="#080e1c" stroke="#1e335a" stroke-width="2" />
+
+  <!-- Window Header -->
+  <rect x="30" y="30" width="1140" height="52" rx="12" fill="#091120" />
+  <circle cx="60" cy="56" r="7" fill="#ff5f56" />
+  <circle cx="85" cy="56" r="7" fill="#ffbd2e" />
+  <circle cx="110" cy="56" r="7" fill="#27c93f" />
+
+  <!-- Title -->
+  <text x="140" y="62" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="bold">
+    🎯 NMOSBCP004Forge Pro v1.0.0 — AMWA BCP-004-01 Receiver Capabilities Studio
+  </text>
+  <rect x="990" y="44" width="160" height="26" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1" />
+  <text x="1005" y="62" fill="#10b981" font-family="monospace" font-size="12" font-weight="bold">10/10 PASS • CERTIFIED</text>
+
+  <!-- Nav Tabs -->
+  <rect x="50" y="102" width="1100" height="42" rx="8" fill="#070e1c" stroke="#1e335a" stroke-width="1" />
+  <rect x="54" y="106" width="240" height="34" rx="6" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1.5" />
+  <text x="75" y="128" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">1. Capability Builder</text>
+  
+  <text x="330" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">2. IS-04 Receiver JSON</text>
+  <text x="610" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">3. Stream Compatibility Matcher</text>
+  <text x="890" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">4. 10-Point Normative Auditor</text>
+
+  <!-- Main Card: Studio Dashboard -->
+  <rect x="50" y="162" width="1100" height="485" rx="10" fill="url(#cardGrad)" stroke="#1e335a" stroke-width="1" />
+
+  <!-- Left Column: Capability Builder -->
+  <rect x="75" y="185" width="480" height="435" rx="8" fill="#091120" stroke="#172847" stroke-width="1.5" />
+  <text x="95" y="215" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold">Receiver Capability Constraints (caps)</text>
+  <text x="95" y="235" fill="#64748b" font-family="monospace" font-size="11">Machine-Readable Parameter Bounds • AMWA Registers</text>
+
+  <!-- Form Fields Mock -->
+  <rect x="95" y="255" width="440" height="50" rx="6" fill="#0d182e" stroke="#223b68" stroke-width="1" />
+  <text x="110" y="275" fill="#94a3b8" font-family="monospace" font-size="11">Receiver Label:</text>
+  <text x="110" y="293" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="bold">UHD Multiviewer Input Receiver 01</text>
+
+  <rect x="95" y="315" width="440" height="50" rx="6" fill="#0d182e" stroke="#223b68" stroke-width="1" />
+  <text x="110" y="335" fill="#94a3b8" font-family="monospace" font-size="11">Resolution Range:</text>
+  <text x="110" y="353" fill="#10b981" font-family="monospace" font-size="12" font-weight="bold">Width: 1280..3840 px • Height: 720..2160 px (Step 2)</text>
+
+  <!-- Constraints Matrix Box -->
+  <rect x="95" y="375" width="440" height="175" rx="6" fill="#070d18" stroke="#172a4c" stroke-width="1" />
+  <text x="110" y="400" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">Active Parameter Constraints:</text>
+
+  <rect x="110" y="415" width="410" height="26" rx="4" fill="#0a1426" stroke="#0284c7" stroke-width="1" />
+  <text x="120" y="432" fill="#38bdf8" font-family="monospace" font-size="11">grain_rate: enum [ 50/1 fps, 60000/1001 fps ]</text>
+
+  <rect x="110" y="450" width="410" height="26" rx="4" fill="#0a1426" stroke="#059669" stroke-width="1" />
+  <text x="120" y="467" fill="#10b981" font-family="monospace" font-size="11">color_sampling: enum [ "YCbCr-4:2:2" ]</text>
+
+  <rect x="110" y="485" width="410" height="26" rx="4" fill="#0a1426" stroke="#f59e0b" stroke-width="1" />
+  <text x="120" y="502" fill="#f59e0b" font-family="monospace" font-size="11">component_depth: enum [ 8-bit, 10-bit ]</text>
+
+  <rect x="110" y="520" width="410" height="20" rx="4" fill="#0a1426" />
+  <text x="120" y="534" fill="#64748b" font-family="monospace" font-size="10">media_types: ["video/raw"] • transport: rtp.mcast</text>
+
+  <rect x="95" y="565" width="440" height="38" rx="6" fill="#06b6d4" />
+  <text x="315" y="589" fill="#04101e" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">⚡ Update Receiver Capability Schema</text>
+
+  <!-- Right Column: Compatibility Matcher -->
+  <rect x="580" y="185" width="545" height="435" rx="8" fill="#091120" stroke="#172847" stroke-width="1.5" />
+  <text x="600" y="215" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold">Stream Compatibility &amp; Pre-Flight Check</text>
+  <text x="600" y="235" fill="#64748b" font-family="monospace" font-size="11">BCS Pre-Flight Evaluation • Prevents Live Video Decoder Crashes</text>
+
+  <!-- Evaluator Comparison Box -->
+  <rect x="600" y="255" width="505" height="235" rx="6" fill="#070d18" stroke="#172a4c" stroke-width="1" />
+  <text x="615" y="280" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">Pre-Flight Parameter Verification Matrix:</text>
+
+  <text x="615" y="308" fill="#e2e8f0" font-family="monospace" font-size="11">Media Type: <tspan fill="#38bdf8">video/raw</tspan> ─── <tspan fill="#10b981" font-weight="bold">✓ MATCH</tspan></text>
+  <text x="615" y="332" fill="#e2e8f0" font-family="monospace" font-size="11">Frame Dimensions: <tspan fill="#38bdf8">1920x1080 px</tspan> [1280..3840] ─── <tspan fill="#10b981" font-weight="bold">✓ MATCH</tspan></text>
+  <text x="615" y="356" fill="#e2e8f0" font-family="monospace" font-size="11">Grain Rate: <tspan fill="#38bdf8">50.00 fps (50/1)</tspan> [50, 59.94] ─── <tspan fill="#10b981" font-weight="bold">✓ MATCH</tspan></text>
+  <text x="615" y="380" fill="#e2e8f0" font-family="monospace" font-size="11">Color Sampling: <tspan fill="#38bdf8">YCbCr-4:2:2</tspan> [4:2:2] ─── <tspan fill="#10b981" font-weight="bold">✓ MATCH</tspan></text>
+  <text x="615" y="404" fill="#e2e8f0" font-family="monospace" font-size="11">Bit Depth: <tspan fill="#38bdf8">10-Bit</tspan> [8, 10] ─── <tspan fill="#10b981" font-weight="bold">✓ MATCH</tspan></text>
+
+  <!-- Incompatible Callout -->
+  <rect x="615" y="424" width="475" height="52" rx="4" fill="#1f1118" stroke="#ef4444" stroke-width="1" />
+  <text x="625" y="444" fill="#f87171" font-family="sans-serif" font-size="11" font-weight="bold">Candidate Stream B (4K UHD 60fps RGB 12-Bit):</text>
+  <text x="625" y="462" fill="#fca5a5" font-family="monospace" font-size="10">✗ Incompatible: 60fps not in [50, 59.94] • RGB rejected • 12-bit rejected</text>
+
+  <!-- BCS Verdict Card -->
+  <rect x="600" y="505" width="505" height="100" rx="6" fill="#081525" stroke="#10b981" stroke-width="1.5" />
+  <text x="615" y="530" fill="#10b981" font-family="monospace" font-size="12" font-weight="bold">VERDICT: 200 OK • ROUTING PERMITTED</text>
+  <text x="615" y="552" fill="#e2e8f0" font-family="sans-serif" font-size="11">Stream Camera 01 satisfies all target multiviewer receiver constraints.</text>
+  <text x="615" y="572" fill="#64748b" font-family="monospace" font-size="10">IS-05 Commit: PATCH /connection/v1.1/single/receivers/3b8f192b.../staged</text>
+  <text x="615" y="590" fill="#06b6d4" font-family="monospace" font-size="10">Safety Guard: Incompatible routes pre-emptively blocked in control panels.</text>
+</svg>
